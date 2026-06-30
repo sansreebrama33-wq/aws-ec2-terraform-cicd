@@ -1,0 +1,11 @@
+﻿# Ignore EC2 private key files (never push these - security risk)
+*.pem
+
+# Ignore Terraform's local cache and state files (contain sensitive info)
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+
+# Ignore Python cache files (auto-generated, not needed in repo)
+__pycache__/
+*.pyc
