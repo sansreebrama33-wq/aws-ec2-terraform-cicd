@@ -26,7 +26,20 @@ Developer pushes code
 - Security Group — opens port 22 (SSH) and port 5000 (Flask)
 
 ## Project Structure
-
+aws-ec2-terraform-cicd/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+├── app/
+│   ├── app.py
+│   └── requirements.txt
+├── terraform/
+│   ├── main.tf
+│   ├── provider.tf
+│   ├── security-group.tf
+│   └── output.tf
+├── .gitignore
+└── README.md
 
 
 
