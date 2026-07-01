@@ -19,6 +19,7 @@ jobs:
           username: ec2-user
           key: ${{ secrets.EC2_SSH_KEY }}
           port: 22
+          timeout: 60s
           script: |
             cd /home/ec2-user
             sudo systemctl restart flaskapp
