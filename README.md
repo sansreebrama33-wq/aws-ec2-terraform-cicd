@@ -8,7 +8,8 @@ A hands-on cloud project where every code push automatically goes live on AWS �
 - Linux (Amazon Linux) — Configured the server and ran Flask as a systemd background service
 - GitHub Actions — A CI/CD pipeline that deploys automatically on every push
 
-## Architecrure
+## Architecture
+```
 Developer pushes code
         ↓
     GitHub Repo
@@ -20,12 +21,14 @@ Developer pushes code
   Restarts Flask service 
         ↓
   Live app updated on AWS EC2
+  ```
 
 ## Infrastructure (Terraform)
 - EC2 t3.micro (Amazon Linux) — runs the Flask app
 - Security Group — opens port 22 (SSH) and port 5000 (Flask)
 
 ## Project Structure
+```
 aws-ec2-terraform-cicd/
 ├── .github/
 │   └── workflows/
@@ -40,6 +43,7 @@ aws-ec2-terraform-cicd/
 │   └── output.tf
 ├── .gitignore
 └── README.md
+```
 
 ## Key Features
 - Flask app with three routes: /, /health, /about
