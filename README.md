@@ -122,7 +122,7 @@ The .github/workflows/deploy.yml pipeline:
 ![About](screenshots/about.png)
 
 * GitHub Actions Pipeline:
-![GitHub Actions](screenshots/github-actions.png)
+![GitHub Actions](screenshots/github-action.png)
 
 * EC2 Instance Running on AWS
 ![EC2 Instance](screenshots/ec2-instance.png)
